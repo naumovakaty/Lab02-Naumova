@@ -26,7 +26,7 @@ char separator = '-';
 int charAsNumber = firstLetter; // char можно неявно превратить в int - это код символа в таблице Unicode
 Console.WriteLine($"Символ: {firstLetter}, разделитель: {separator}");
 Console.WriteLine($"Код символа '{firstLetter}' в Unicode: chatAsNumber");
-Console.WriteLine($"Табуляция:\ tпосле таба");
+Console.WriteLine($"Табуляция:\tпосле таба");
 Console.WriteLine($"Перенос:\nпосле переноса");
 Console.WriteLine();
 Console.WriteLine("decimal против double");
@@ -40,10 +40,16 @@ Console.WriteLine($"decimal: 0.1 + 0.2 ={priceDecimal}");
 Console.WriteLine();
 Console.WriteLine("var");
 
-var studentAge = 20;    компилятор вывел int
+var studentAge = 20;    //компилятор вывел int
 var gra = 4.75;       //компилятор вывел double
 var fullName = "Смирнова А. С.";  //компилятор вывел string
 
-Console.WriteLine($"{fullName}, возраст {student}, средний балл {gra}");
+Console.WriteLine($"{fullName}, возраст {studentAge}, средний балл {gra}");
 
 Console.WriteLine();
+Console.WriteLine("Ввод текста");
+Console.Write("Введите ваше имя: ");
+string enteredName = Console.ReadLine();
+Console.Write("Введите название вашей группы: ");
+string enteredGroup = Console.ReadLine();
+Console.WriteLine($"Здравствуйте, {enteredName} из группы {enteredGroup}!");
